@@ -1,0 +1,331 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Header Styles */
+header {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #d8c4b1;
+}
+
+main {
+    flex: 1;
+    padding-top: 50px; /* Adjust based on header height */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Gallery grid styles */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items if there's not enough space */
+    gap: 20px; /* Adds space between items */
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row, minus the gap */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%; /* Ensures the image fits within its container */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 600px; /* Sets a maximum width for the image */
+    max-height: 600px; /* Sets a maximum height for the image */
+    object-fit: cover; /* Ensures the image covers the container area */
+    border-radius: 8px; /* Optional: rounds corners of the image */
+}
+
+
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#nav-container nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-container nav ul li {
+    margin-left: 20px;
+}
+
+#nav-container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#nav-container nav ul li a:hover {
+    color: #d8c4b1;
+}
+
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    background-color: #fff;
+    height: 3px;
+    margin: 5px;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    #nav-container nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    #nav-container nav ul.active {
+        display: flex;
+    }
+
+    #nav-container nav ul li {
+        margin: 10px 0;
+    }
+}
+
+main {
+    flex: 1;
+    padding-top: 50px; /* Adjust based on header height */
+}
+
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+/* Navigation Styles */
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Ensures no underline by default */
+    position: relative; /* For positioning the pseudo-elements if needed */
+}
+
+/* Remove underline for active link */
+nav ul li a.active {
+    border-bottom: none; /* Remove any border-bottom */
+    /* Alternatively, use `text-decoration: none;` to ensure no underline */
+}
+
+/* If needed: Add hover effect for links */
+nav ul li a:hover {
+    border-bottom: 2px solid #fff; /* Optional hover effect */
+}
+
+/* Footer Styles */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #f4f4f4;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 0.9rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #d8c4b1;
+}
+
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.newsletter-form h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background:#d8c4b1;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+

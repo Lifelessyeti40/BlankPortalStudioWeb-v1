@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio | BlankPortalStudio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="nav-container">
+            <h1>BlankPortalStudio</h1>
+            <nav>
+                <div class="burger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="discord-bots.html">Discord Bots</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <h2>Our Work</h2>
+                <!-- Filter Section -->
+                <div class="filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="bots">Discord Bots</button>
+                </div>
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <img src="images/Shop Project.png" alt="Project 1">
+                        <div class="portfolio-info">
+                            <h3>Clothes Branding</h3>
+                            <p>I had the pleasure of designing a brand-new website for an amazing clothing brand. The site showcases their unique style, branding, and collections in a sleek, modern layout that brings their vision to life. From bold designs to minimalist aesthetics, the website highlights the essence of their fashion line while providing a seamless shopping experience. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="web">
+                        <img src="images/cta button.png" alt="Project 2">
+                        <div class="portfolio-info">
+                            <h3>Call-To-Action Button</h3>
+                            <p>I Implemented a sleek and intuitive "Contact Us" button on the website, making it easier than ever for visitors to get in touch. Whether it’s for inquiries, feedback, or collaboration, this new CTA is designed to streamline communication and enhance user experience. Ready to boost engagement and make connections simple!.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="images/menu with button.png" alt="Project 2">
+                        <div class="portfolio-info">
+                            <h3>Restaurant Menu With Button Option</h3>
+                            <p>A new interactive menu on our website to make your dining experience even more enjoyable! Now, you can easily explore all our delicious dishes with just a few clicks.
+                                Browse by category: Starters, Main Courses, Desserts, and more!
+                                One-tap ordering: Use the buttons to quickly add your favorites to your order.
+                                Detailed descriptions: Discover the flavors and ingredients of each dish.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more projects here -->
+                    <div class="portfolio-item" data-category="bots">
+                        <img src="images/DiscordImage.png" alt="Project 1">
+                        <div class="portfolio-info">
+                            <h3>Rock Paper Scissors</h3>
+                            <p> Challenge your friends or test your luck with our brand-new Rock Paper Scissors game, available right on Discord! Simply type the command and play against the bot to see if you can outsmart it. Whether you’re in the mood for some friendly competition or just want to pass the time, this classic game is the perfect way to have fun. So what are you waiting for? Jump into the game, pick your move, and see if you come out on top! 🪨✂️🧻 </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Columns -->
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>BlankPortalStudio is dedicated to providing innovative web solutions and engaging Discord bot development. Our goal is to help businesses and communities thrive in the digital landscape.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="discord-bots.html">Discord Bots</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Manchester Terrace </li>
+                    <li><i class="fas fa-phone-alt"></i> 07359438449</li>
+                    <li><i class="fas fa-envelope"></i> blankportalstudios@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <form class="newsletter-form">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BlankPortalStudio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

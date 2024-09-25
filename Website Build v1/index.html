@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BlankPortalStudio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="nav-container">
+            <h1>BlankPortalStudio</h1>
+            <nav>
+                <div class="burger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="discord-bots.html">Discord Bots</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-heading">Welcome to BlankPortalStudio</h1>
+                <p class="hero-text">Designing Your Future.</p>
+                <a href="services.html" class="btn hero-btn">Explore Our Portfolio</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-icon">&#x25BC;</div>
+                <p>Scroll Down</p>
+            </div>
+        </section>
+
+
+
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us-grid">
+                    <!-- About Us Text Section -->
+                    <div class="about-us-text">
+                        <h2>About Us</h2>
+                        <h3>Innovative Solutions for the Digital World</h3>
+                        <p>At BlankPortalStudio, we are passionate about delivering creative and functional digital
+                            solutions that help businesses thrive in the online world. Whether you're looking for a
+                            stunning website or a custom-built Discord bot, our team of developers and designers work
+                            hand in hand to bring your vision to life.</p>
+
+                        <div class="mission">
+                            <h4><i class="fas fa-bullseye"></i> Our Mission</h4>
+                            <p>Our mission is to provide cutting-edge solutions that empower businesses to succeed in a
+                                fast-evolving digital landscape. We believe in crafting unique, tailor-made products
+                                that reflect our clients' brand and values.</p>
+                        </div>
+
+                        <div class="vision">
+                            <h4><i class="fas fa-lightbulb"></i> Our Vision</h4>
+                            <p>We aim to be a leading provider of innovative digital solutions, recognized for our
+                                creativity, technical expertise, and customer-focused approach.</p>
+                        </div>
+
+                        <a href="contact.html" class="btn">Get in Touch</a>
+                    </div>
+
+                    <!-- About Us Image Section -->
+                    <div class="about-us-image">
+                        <img src="images/websitecode.png" alt="Our Team at Work">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="team-grid" style="justify-content: center;">
+                    <div class="team-member">
+                        <img src="images/WillTeam1.jpeg" alt="Will Smith ">
+                        <div class="member-info">
+                            <h4>Will Smith</h4>
+                            <p>Director</p>
+                            <p>Will is the Director behind BlankPortalStudio with 10+ years experiance.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/JasTeam1.jpeg" alt="Jasmin Adams">
+                        <div class="member-info">
+                            <h4>Jasmin Adams</h4>
+                            <p>Head Of Resources</p>
+                            <p>Jasmin is the core structure to BlankPortalStudio, she is the first person you will speak
+                                with.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/LukeTeam.png" alt="Luke Smith">
+                        <div class="member-info">
+                            <h4>Luke Smith</h4>
+                            <p>Lead Developer</p>
+                            <p>Luke is the lead developer at BlankPortalStudio, with 10+ years experiance behind him he
+                                can get the job done.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Projects -->
+        <section class="case-studies">
+            <div class="container">
+                <h3>Recent Projects</h3>
+                <div class="case-studies-grid">
+                    <div class="case-study">
+                        <img src="images/Case 1.png" alt="Case Study 1">
+                        <div class="case-study-info">
+                            <h4>Custom Holiday Picker</h4>
+                            <p>We revamped a customers online holiday picker with a modern design and improved
+                                functionality, resulting in a 30% increase in user engagement.</p>
+                            <a href="holidaypicker.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="case-study">
+                        <img src="images/Case 2.png" alt="Case Study 2">
+                        <div class="case-study-info">
+                            <h4>Full Website Design</h4>
+                            <p>We developed a full interactive website for this customer, they wanted a new age, modern
+                                website that would be more attractive.</p>
+                            <a href="fullwebsite.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="case-study">
+                        <img src="images/DiscordBot.RPS.jpeg" alt="Case Study 2">
+                        <div class="case-study-info">
+                            <h4>Custom Discord Bot Function</h4>
+                            <p>This customer wanted something fun and engaging for their community, so our lead
+                                developer created a fun Rock Paper Scissors for them to playa round with.</p>
+                            <a href="discordbot.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call-to-Action -->
+        <section class="cta">
+            <div class="container">
+                <h5>Ready to Start Your Project?</h5>
+                <p>Contact us today and let’s bring your ideas to life.</p>
+                <a href="contact.html" class="btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Skill Charts -->
+        <section class="core-values">
+            <div class="container">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Innovation</h3>
+                        <p>We bring fresh ideas and cutting-edge technologies to every project, ensuring your website
+                            and Discord bots are not only functional but also forward-thinking.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Collaboration</h3>
+                        <p>We work closely with our clients, fostering open communication to understand their needs and
+                            delivering solutions that align with their vision.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Precision</h3>
+                        <p>Every detail matters. We focus on delivering meticulously designed websites and bots that
+                            work seamlessly across platforms.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-award"></i>
+                        <h3>Quality</h3>
+                        <p>We prioritize high-quality outputs in everything we create, from clean code to user-friendly
+                            interfaces, ensuring satisfaction in every interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Columns -->
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>BlankPortalStudio is dedicated to providing innovative web solutions and engaging Discord bot
+                    development. Our goal is to help businesses and communities thrive in the digital landscape.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="discord-bots.html">Discord Bots</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Manchester Terrace</li>
+                    <li><i class="fas fa-phone-alt"></i> 07359438449</li>
+                    <li><i class="fas fa-envelope"></i> blankportalstudios@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" class="social-icon" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="social-icon" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="social-icon" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <form class="newsletter-form">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BlankPortalStudio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
